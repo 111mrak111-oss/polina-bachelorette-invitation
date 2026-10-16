@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#651D32">
+    <meta name="description" content="Особенное приглашение на девичник Полины">
+    <title>Для Полины — с любовью</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Manrope:wght@300;400;500;600&family=Prata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body class="intro-locked">
+    <noscript><div class="noscript">Для просмотра приглашения включи JavaScript ♡</div></noscript>
+
+    <section class="intro" id="intro" aria-labelledby="intro-title">
+      <div class="intro__glow" aria-hidden="true"></div>
+      <p class="eyebrow intro__eyebrow">только для тебя</p>
+      <h1 class="intro__title" id="intro-title" data-config="introTitle"></h1>
+
+      <button class="envelope-button" id="open-invitation" type="button" aria-label="Открыть приглашение" aria-controls="invitation" aria-expanded="false">
+        <span class="envelope-scene" aria-hidden="true">
+          <span class="envelope">
+            <span class="envelope__inside"></span>
+            <span class="envelope__letter">
+              <span class="letter__monogram">П</span>
+              <span class="letter__line"></span>
+              <span class="letter__small">приглашение</span>
+            </span>
+            <span class="envelope__back"></span>
+            <span class="envelope__flap"></span>
+            <span class="envelope__front"></span>
+            <span class="seal"><span>П</span></span>
+          </span>
+          <img class="cat cat--intro" src="./images/cats/gray-sitting.png" alt="">
+          <img class="cat cat--peek" src="./images/cats/gray-closeup.png" alt="">
+          <img class="cat cat--reach" src="./images/cats/gray-reaching.png" alt="">
+        </span>
+        <span class="open-label">Коснись, чтобы открыть</span>
+      </button>
+      <p class="intro__hint">или нажми Enter</p>
+    </section>
+
+    <main id="invitation">
+      <section class="section hero-section" aria-labelledby="invite-heading">
+        <div class="ornament" aria-hidden="true"><span></span><i>♡</i><span></span></div>
+        <p class="eyebrow reveal" data-config="inviteKicker"></p>
+        <h2 class="display-title reveal" id="invite-heading" data-config="inviteTitle"></h2>
+        <p class="lead reveal" data-config="inviteText"></p>
+        <img class="cat cat--orange-sitting float-cat" src="./images/cats/orange-sitting.png" alt="Рыже-белый котик сидит рядом с приглашением">
+        <a class="scroll-cue" href="#program">листай дальше <span aria-hidden="true">↓</span></a>
+      </section>
+
+      <section class="section program" id="program" aria-labelledby="program-heading">
+        <div class="section-heading reveal">
+          <p class="eyebrow">предвкушение</p>
+          <h2 class="display-title" id="program-heading" data-config="programTitle"></h2>
+        </div>
+        <div class="program-grid">
+          <article class="program-card reveal">
+            <span class="program-card__number">01</span>
+            <img class="cat program-card__cat cat--playful" src="./images/cats/gray-playful.png" alt="Серый котик играет">
+            <h3 data-config="programOneTitle"></h3>
+            <p data-config="programOneText"></p>
+          </article>
+          <article class="program-card reveal">
+            <span class="program-card__number">02</span>
+            <img class="cat program-card__cat cat--rolling" src="./images/cats/orange-rolling-top.png" alt="Рыже-белый котик лежит на спине">
+            <h3 data-config="programTwoTitle"></h3>
+            <p data-config="programTwoText"></p>
+          </article>
+          <article class="program-card reveal">
+            <span class="program-card__number">03</span>
+            <img class="cat program-card__cat cat--closeup" src="./images/cats/orange-closeup.png" alt="Рыже-белый котик выглядывает">
+            <h3 data-config="programThreeTitle"></h3>
+            <p data-config="programThreeText"></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section preparation" aria-labelledby="prep-heading">
+        <div class="paper-card paper-card--prep reveal">
+          <span class="tape tape--left" aria-hidden="true"></span>
+          <p class="eyebrow">важная записка</p>
+          <h2 class="display-title" id="prep-heading" data-config="prepTitle"></h2>
+          <div class="prep-notes">
+            <p data-config="prepBring"></p>
+            <span class="prep-notes__divider" aria-hidden="true"></span>
+            <p data-config="prepOutfit"></p>
+          </div>
+          <img class="cat cat--resting float-cat" src="./images/cats/gray-resting.png" alt="Серый котик отдыхает рядом с запиской">
+        </div>
+        <img class="cat cats-wide reveal" src="./images/cats/cats-sleeping-crate-lounging.png" alt="Котики уютно устроились вместе">
+      </section>
+
+      <section class="section details" aria-labelledby="details-heading">
+        <div class="details-card reveal">
+          <div class="details-card__topline"><span></span><i>save the date</i><span></span></div>
+          <p class="eyebrow">время встречи</p>
+          <h2 class="display-title" id="details-heading">Главное</h2>
+          <dl class="details-list">
+            <div><dt>Дата</dt><dd data-config="date"></dd></div>
+            <div><dt>Время</dt><dd data-config="time"></dd></div>
+            <div><dt>Место</dt><dd data-config="place"></dd></div>
+          </dl>
+          <img class="cat cat--details" src="./images/cats/orange-rolling-cats-with-treat.png" alt="Котики с лакомством у карточки даты">
+        </div>
+      </section>
+
+      <section class="section finale" aria-labelledby="final-heading">
+        <div class="finale__halo" aria-hidden="true"></div>
+        <p class="eyebrow reveal">до встречи</p>
+        <h2 class="display-title reveal" id="final-heading" data-config="finalTitle"></h2>
+        <p class="signature reveal" data-config="signature"></p>
+        <img class="cat cats-together reveal" src="./images/cats/cats-sitting-together.png" alt="Серый и рыже-белый котики сидят вместе">
+        <div class="ornament ornament--light" aria-hidden="true"><span></span><i>♡</i><span></span></div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
